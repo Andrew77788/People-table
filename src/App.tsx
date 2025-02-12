@@ -1,21 +1,37 @@
-import React from 'react';
+import { PeoplePage } from './components/PeoplePage';
+import { Navbar } from './components/Navbar';
+import { useEffect } from 'react';
 import './App.scss';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { HomePage } from './components/HomePage';
+import { NotFoundPage } from './components/NotFoundPage';
 
-interface Props {
-  onClick: () => void;
-  children: React.ReactNode;
-}
+export const App = () => {
+  useEffect(() => {
+    document.documentElement.classList.add('has-navbar-fixed-top');
 
-export const Provider: React.FC<Props> = React.memo(({ onClick, children }) => (
-  <button type="button" onClick={onClick}>
-    {children}
-  </button>
-));
+    return () => {
+      document.documentElement.classList.remove('has-navbar-fixed-top');
+    };
+  }, []);
 
-export const App: React.FC = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>TodoList</Provider>
+    <div data-cy="app">
+      <Navbar />
+
+      <main className="section">
+        <div className="container">
+          <Routes>
+            <Route path="/home" element={<Navigate to="/" />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/people">
+              <Route path=":peopleSlug?" element={<PeoplePage />}></Route>
+            </Route>
+
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </div>
+      </main>
     </div>
   );
 };
