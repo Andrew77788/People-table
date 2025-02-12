@@ -1,9 +1,15 @@
-# React TypeScript Starter Pack
+Technologies Used
 
-To use this template click `Use this template`
+1. Frontend
+  - React – Component-based UI development.
+  - React DOM – Efficient rendering of React components in the browser.
+  - React Router: Efficient routing with support for dynamic paths, redirection, and 404 error handling.
+  - useEffect Hook: Manages side effects like adding/removing classes on component mount/unmount.
 
-### Available Scripts
+2. Styling & UI Frameworks
+  - Bulma: CSS framework for responsive design.
 
-`Deploy` - available to deploy your application to gh-pages, to deploy the project, change the second line of code in package.json, specifically the homepage value, from "." to the repository name
+3. Tooling & Bundling
+TypeScript (JSX/TSX) – Provides type safety and better developer experience.
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+[DEMO LINK](https://Andrew77788.github.io/People-table)
