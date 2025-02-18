@@ -1,15 +1,37 @@
-Technologies Used
+People Page
+📌 Description
+People Page is a React-based web application that provides an interactive user interface for displaying and managing people-related data. The project utilizes React Router for navigation and Bulma for styling.
 
-1. Frontend
-  - React – Component-based UI development.
-  - React DOM – Efficient rendering of React components in the browser.
-  - React Router: Efficient routing with support for dynamic paths, redirection, and 404 error handling.
-  - useEffect Hook: Manages side effects like adding/removing classes on component mount/unmount.
+🚀 Running the Project Locally
+1️⃣ Clone the repository
+- git clone https://github.com/your-username/your-repository.git
+- cd your-repository
 
-2. Styling & UI Frameworks
-  - Bulma: CSS framework for responsive design.
+2️⃣ Ensure you have the correct Node.js version
+The project requires Node.js 20.18.1.
+Check your current version:
+- node -v
 
-3. Tooling & Bundling
-TypeScript (JSX/TSX) – Provides type safety and better developer experience.
+If needed, use nvm to switch versions:
+- nvm use 20.18.1
 
-[DEMO LINK](https://Andrew77788.github.io/People-table)
+3️⃣ Install dependencies
+Using npm:
+- npm install
+
+Or yarn:
+- yarn install
+
+4️⃣ Start the development server
+- npm start
+The project will be available at:
+👉 http://localhost:3000
+
+🛠️ Technologies Used
+Frontend
+⚛ React – Component-based UI development.
+🌍 React Router – Efficient client-side routing.
+🎨 Bulma – Responsive CSS framework for styling.
+Tooling & Development
+💻 TypeScript – Provides type safety and better developer experience.
+🏗 ESLint & Prettier – Code linting and formatting.
