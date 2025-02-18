@@ -4,7 +4,7 @@ People Page is a React-based web application that provides an interactive user i
 
 🚀 Running the Project Locally
 1️⃣ Clone the repository
-- git clone https://github.com/your-username/your-repository.git
+- git clone https://github.com/Andrew77788/People-table.git
 - cd your-repository
 
 2️⃣ Ensure you have the correct Node.js version
@@ -35,3 +35,6 @@ Frontend
 Tooling & Development
 💻 TypeScript – Provides type safety and better developer experience.
 🏗 ESLint & Prettier – Code linting and formatting.
+
+
+Site is live at https://andrew77788.github.io/People-table/
